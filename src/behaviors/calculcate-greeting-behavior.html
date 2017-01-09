@@ -1,0 +1,16 @@
+<script>
+  (() => {
+
+    'use strict';
+
+    const CalculcateGreetingBehaviorImpl = {
+      '_calculateGreeting': function _calculateGreeting(name) {
+        return "Greetings, " + name + "!";
+      }
+    };
+
+    window.zandbox = window.zandbox || {};
+    window.zandbox.CalculcateGreetingBehavior = window.zandbox.CalculcateGreetingBehavior ||
+      CalculcateGreetingBehaviorImpl;
+  })();
+</script>

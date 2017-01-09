@@ -1,0 +1,16 @@
+<script>
+  (() => {
+
+    'use strict';
+
+    const DecideDisplayBehaviorImpl = {
+      '_decideDisplay': function _decideDisplay(name) {
+        return name === 'Gordon Freeman';
+      }
+    };
+
+    window.zandbox = window.zandbox || {};
+    window.zandbox.DecideDisplayBehavior = window.zandbox.DecideDisplayBehavior ||
+      DecideDisplayBehaviorImpl;
+  })();
+</script>
